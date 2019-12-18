@@ -1,9 +1,46 @@
-.App {
+/* .App {
   text-align: center;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
+.clock {
+  display: flex;
+  background: wheat;
+  width: 400px;
+  height: 400px;
+}
+.clock .pointers {
+  width: 25px;
+  height: 25px;
+  background: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 12px;
+}
+.clock .pointer12 {
+  position: relative;
+  left: 50%;
+}
+.clock .pointer6 {
+  position: relative;
+  align-self: flex-end;
+  left: 50%;
+  transform: translate(-100%);
+}
+.clock .pointer3 {
+  position: relative;
+  align-self: center;
+  /* justify-self: flex-end; */
+  left: 325px;
+}
+.clock .pointer9 {
+  position: relative;
+  align-self: center;
+  left: -75px;
 }
 
 .App-header {
@@ -17,6 +54,3 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
